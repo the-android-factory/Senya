@@ -1,0 +1,119 @@
+{
+  "attractions": [
+    {
+      "id": "687a58ab-1d73-4d4a-beae-68516b948fd7",
+      "title": "Sali",
+      "image_url": "https://www.croatiaholidays.travel/storage/destinations/129311392_l-2_thumb_1150.jpg",
+      "description": "Sali is a village and a municipality in Croatia in the Zadar County. Sali is a small town but still the largest on the island of Dugi otok. The total population of Sali is 1,698 inhabitants.",
+      "location": {
+        "latitude": "43.937887",
+        "longitude": "15.163208"
+      },
+      "months_to_visit": "June - September",
+      "facts": [
+        "Largest town on the island of Dugi Otok, though it is small enough for everyone to know each other.",
+        "It is a fishing village that hosts a traditional “festa” or festival every year to honor fishermen traditions, drawing in tourists from all over Europe.",
+        "The Dalmatian breed of dogs is from the same region of Croatia, known as “Dalmatia.”",
+        "Borders two beautiful national parks, Telascica and Kornati."
+      ]
+    },
+    {
+      "id": "c95a98c4-ca5a-4cc6-a978-79099173de1c",
+      "title": "Zagreb",
+      "image_url": "https://www.intrepidtravel.com/adventures/wp-content/uploads/2017/10/croatia_zagreb_night-city.jpg",
+      "description": "Zagreb, Croatia’s northwestern capital, is distinguished by its 18th- and 19th-century Austro-Hungarian architecture. At its center, Upper Town is the site of the Gothic, twin-spired Zagreb Cathedral and 13th-century St. Mark’s Church, with a colorfully tiled roof. Nearby is pedestrian-friendly Tkalčićeva Street, lined with outdoor cafes. Lower Town has the main square, Ban Jelačić, plus shops, museums and parks.",
+      "location": {
+        "latitude": "45.8150",
+        "longitude": "15.9819"
+      },
+      "months_to_visit": "All year",
+      "facts": [
+        "The capital of Croatia",
+        "The Zagreb Cathedral is the tallest building in Croatia.",
+        "The upper town of Zagreb has over 200, non-electric lamp posts that are hand lit every evening and extinguished every morning. The same man has held this role for many years, though now being in his 70s, has an apprentice to help him.",
+        "Has the world’s shortest public transport vehicle, the Zagreb Funicular, which takes only 60 seconds to take you between parts of the city."
+      ]
+    },
+    {
+      "id": "6d322e54-ce63-4c46-96e8-28e1935585ca",
+      "title": "Zadar",
+      "image_url": "https://cdn.budgetyourtrip.com/images/photos/articles/croatia_zadar.jpg",
+      "description": "Zadar, a city on Croatia’s Dalmatian coast, is known for the Roman and Venetian ruins of its peninsular Old Town. There are several Venetian gates in the city walls. Surrounding the Roman-era Forum is 11th-century St. Mary’s Convent, with religious art dating to the 8th century. There’s also the grand, 12th-century St. Anastasia’s Cathedral and the round, 9th-century pre-Romanesque Church of St. Donatus.",
+      "location": {
+        "latitude": "44.1194",
+        "longitude": "15.2314"
+      },
+      "months_to_visit": "May - October",
+      "facts": [
+        "There are many ancient ruins in this city, including a fortress wall that borders some of the city.",
+        "Zadar is the site of the sea organs, which appear like regular steps into the sea, but sound like beautiful organ music due to the crashing of the waves against them.",
+        "It is known to have the best sunset in the world"
+      ]
+    },
+    {
+      "id": "0ec338ff-df52-4723-89ac-a987b2bc5267",
+      "title": "Plitvice Lakes National Park",
+      "image_url": "https://i1.wp.com/www.gourmetroaming.com/wp-content/uploads/2017/10/plitvice-lakes-national-park.jpg",
+      "description": "Plitviče Lakes National Park is a 295-sq.-km forest reserve in central Croatia. It's known for a chain of 16 terraced lakes, joined by waterfalls, that extend into a limestone canyon. Walkways and hiking trails wind around and across the water, and an electric boat links the 12 upper and 4 lower lakes. The latter are the site of Veliki Slap, a 78m-high waterfall.",
+      "location": {
+        "latitude": "44.8654",
+        "longitude": "15.5820"
+      },
+      "months_to_visit": "All year",
+      "facts": [
+        "There are 16 lakes and 90 waterfalls",
+        "You can walk and hike around the waterfalls, even being able to dip your hands in at some points.",
+        "The color of the lakes are never the same- ranging daily from shades of emerald green, deep blue, and faded gray.",
+        "The caves of Plitvice Lakes are home to unique and rarely seen creatures that have existed since ancient times. There is even legend that a wise monk inhabits one of the caves and will give you sage advice if you seek it."
+      ]
+    },
+    {
+      "id": "b9dadbc9-89e4-4b16-9589-78297fb225a7",
+      "title": "Kornati National Park",
+      "image_url": "https://www.sibenik-tourism.hr/upload/lokacije/2018/06/2018-06-27/14/nationalparkkornatiexcursionsprivatetoursromeoandjuliettravelagency.jpg",
+      "description": "Kornat is an island in the Croatian part of the Adriatic Sea, in central Dalmatia. With an area of 32.44 km² it is the 16th largest island in Croatia and the largest island in the eponymous Kornati islands archipelago.",
+      "location": {
+        "latitude": "43.8707",
+        "longitude": "15.2324"
+      },
+      "months_to_visit": "June - September",
+      "facts": [
+        "They are named for their triangular shaped islands and dry barren landscape",
+        "Donkeys and rams can frequently be seen on the islands",
+        "One of the kornati islands contains ancient ruins that are in fact, not authentic but rather, were created for a film and left behind.",
+        "You can go sailing through the kornati islands, though be careful of narrow straits that can only accommodate small boats!"
+      ]
+    },
+    {
+      "id": "a879072e-4f36-489c-911b-3cc0a8c27406",
+      "title": "Dubrovnik",
+      "image_url": "https://i.dailymail.co.uk/1s/2019/08/31/13/17909778-0-image-a-8_1567255695004.jpg",
+      "description": "Dubrovnik is a city in southern Croatia fronting the Adriatic Sea. It's known for its distinctive Old Town, encircled with massive stone walls completed in the 16th century. Its well-preserved buildings range from baroque St. Blaise Church to Renaissance Sponza Palace and Gothic Rector’s Palace, now a history museum. Paved with limestone, the pedestrianized Stradun (or Placa) is lined with shops and restaurants.",
+      "location": {
+        "latitude": "42.6507",
+        "longitude": "18.0944"
+      },
+      "months_to_visit": "All year",
+      "facts": [
+        "Filming site of the hit series, Game of Thrones",
+        "The city is surrounded by ancient walls and fortifications.",
+        "It is only 3 meters above sea level."
+      ]
+    },
+    {
+      "id": "d416bff0-e92c-44c5-aae3-52109dd17fbc",
+      "title": "Split",
+      "image_url": "https://cdn.tourcms.com/a/11676/730/1/default.jpg",
+      "description": "Split is Croatia's second-largest city and the largest city in the Dalmatia region. It lies on the eastern shore of the Adriatic Sea and is spread over a central peninsula and its surroundings.",
+      "location": {
+        "latitude": "43.5081",
+        "longitude": "16.4402"
+      },
+      "months_to_visit": "All year",
+      "facts": [
+        "It is the largest city on the Dalmatian Coast",
+        "It is home to Diocletian’s Palace."
+      ]
+    }
+  ]
+}
