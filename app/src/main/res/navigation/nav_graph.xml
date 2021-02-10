@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.dmp.senya.ui.fragment.HomeFragment"
+        android:name="com.dmp.senya.ui.fragment.home.HomeFragment"
         android:label="Home Fragment"
         tools:layout="@layout/fragment_home" >
 
