@@ -9,7 +9,7 @@ import com.dmp.senya.databinding.ViewHolderAttractionBinding
 import com.squareup.picasso.Picasso
 
 class HomeFragmentAdapter(
-    private val onClickedCallback: () -> Unit
+    private val onClickedCallback: (String) -> Unit
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val attractions = ArrayList<Attraction>()
@@ -37,13 +37,13 @@ class HomeFragmentAdapter(
     ) {
         private val binding = ViewHolderAttractionBinding.bind(itemView)
 
-        fun onBind(attraction: Attraction, onClicked: () -> Unit) {
+        fun onBind(attraction: Attraction, onClicked: (String) -> Unit) {
             binding.titleTextView.text = attraction.title
             Picasso.get().load(attraction.image_url).into(binding.headerImageView)
             binding.monthsToVisitTextView.text = attraction.months_to_visit
 
             binding.root.setOnClickListener {
-                onClicked()
+                onClicked(attraction.id)
             }
         }
     }

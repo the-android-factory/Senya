@@ -9,18 +9,23 @@
         android:id="@+id/homeFragment"
         android:name="com.dmp.senya.ui.fragment.home.HomeFragment"
         android:label="Home Fragment"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_homeFragment_to_attractionDetailFragment"
-            app:destination="@id/attractionDetailFragment" />
+            app:destination="@id/attractionDetailFragment"
+            app:enterAnim="@anim/fragment_slide_in_right"
+            app:exitAnim="@anim/fragment_slide_out_left"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+
     </fragment>
 
     <fragment
         android:id="@+id/attractionDetailFragment"
         android:name="com.dmp.senya.ui.fragment.AttractionDetailFragment"
         android:label="Attraction Details"
-        tools:layout="@layout/fragment_acttraction_detail" >
+        tools:layout="@layout/fragment_acttraction_detail">
 
         <argument
             android:name="attractionId"
