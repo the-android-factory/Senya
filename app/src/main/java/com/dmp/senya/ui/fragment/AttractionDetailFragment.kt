@@ -1,16 +1,20 @@
 package com.dmp.senya.ui.fragment
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.net.Uri
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.navArgs
 import com.dmp.senya.R
 import com.dmp.senya.data.Attraction
 import com.dmp.senya.databinding.FragmentActtractionDetailBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.squareup.picasso.Picasso
+import java.lang.StringBuilder
 
 class AttractionDetailFragment : BaseFragment() {
 
@@ -46,7 +50,23 @@ class AttractionDetailFragment : BaseFragment() {
 
         binding.numberOfFactsTextView.text = "${attraction.facts.size} facts"
         binding.numberOfFactsTextView.setOnClickListener {
-            // todo
+            val stringBuilder = StringBuilder("")
+            attraction.facts.forEach {
+                stringBuilder.append("\u2022 $it")
+                stringBuilder.append("\n\n")
+            }
+            val message = stringBuilder.toString().substring(0, stringBuilder.toString().lastIndexOf("\n\n"))
+
+            AlertDialog.Builder(requireContext(), R.style.MyDialog)
+                .setTitle("${attraction.title} Facts")
+                .setMessage(message)
+                .setPositiveButton("Ok") { dialog, which ->
+                    // run your code
+                }
+                .setNegativeButton("No!") { dialog, which ->
+                    // run negative code
+                }
+                .show()
         }
     }
 
