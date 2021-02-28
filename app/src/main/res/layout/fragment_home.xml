@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.recyclerview.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/recyclerView"
+    <com.airbnb.epoxy.EpoxyRecyclerView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/epoxyRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
