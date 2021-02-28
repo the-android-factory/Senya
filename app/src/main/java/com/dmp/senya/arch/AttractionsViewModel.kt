@@ -15,6 +15,9 @@ class AttractionsViewModel : ViewModel() {
     // AttractionDetailFragment
     val selectedAttractionLiveData = MutableLiveData<Attraction>()
 
+    // MainActivity
+    val locationSelectedLiveData = MutableLiveData<Attraction>()
+
     fun init(context: Context) {
         val attractionsList = repository.parseAttractions(context)
         attractionListLiveData.postValue(attractionsList)
