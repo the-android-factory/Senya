@@ -3,6 +3,7 @@ package com.dmp.senya.ui.fragment.home
 import com.airbnb.epoxy.EpoxyController
 import com.dmp.senya.R
 import com.dmp.senya.data.Attraction
+import com.dmp.senya.databinding.EpoxyModelHeaderBinding
 import com.dmp.senya.databinding.ViewHolderAttractionBinding
 import com.dmp.senya.ui.epoxy.LoadingEpoxyModel
 import com.dmp.senya.ui.epoxy.ViewBindingKotlinModel
@@ -38,6 +39,17 @@ class HomeFragmentController(
             return
         }
 
+        val firstGroup =
+            attractions.filter { it.title.startsWith("s", true) || it.title.startsWith("D", true) }
+
+        HeaderEpoxyModel("Recently Viewed").id("header_1").addTo(this)
+        firstGroup.forEach { attraction ->
+            AttractionEpoxyModel(attraction, onClickedCallback)
+                .id(attraction.id)
+                .addTo(this)
+        }
+
+        HeaderEpoxyModel("All Attractions").id("header_2").addTo(this)
         attractions.forEach { attraction ->
             AttractionEpoxyModel(attraction, onClickedCallback)
                 .id(attraction.id)
@@ -58,6 +70,15 @@ class HomeFragmentController(
             root.setOnClickListener {
                 onClicked(attraction.id)
             }
+        }
+    }
+
+    data class HeaderEpoxyModel(
+        val headerText: String
+    ) : ViewBindingKotlinModel<EpoxyModelHeaderBinding>(R.layout.epoxy_model_header) {
+
+        override fun EpoxyModelHeaderBinding.bind() {
+            headerTextView.text = headerText
         }
     }
 }
