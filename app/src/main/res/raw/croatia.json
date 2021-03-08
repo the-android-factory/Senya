@@ -3,7 +3,12 @@
     {
       "id": "687a58ab-1d73-4d4a-beae-68516b948fd7",
       "title": "Sali",
-      "image_url": "https://www.croatiaholidays.travel/storage/destinations/129311392_l-2_thumb_1150.jpg",
+      "image_urls": [
+        "https://www.croatiaholidays.travel/storage/destinations/129311392_l-2_thumb_1150.jpg",
+        "https://cf.bstatic.com/images/hotel/max1024x768/151/151133086.jpg",
+        "https://i.croatiaimages.com/places/323/dalmatia-dugi-otok-sali-croatia-1-720x480.jpg",
+        "https://www.apartmanisostaric.com/images/slider1.jpg"
+      ],
       "description": "Sali is a village and a municipality in Croatia in the Zadar County. Sali is a small town but still the largest on the island of Dugi otok. The total population of Sali is 1,698 inhabitants.",
       "location": {
         "latitude": "43.937887",
@@ -20,7 +25,9 @@
     {
       "id": "c95a98c4-ca5a-4cc6-a978-79099173de1c",
       "title": "Zagreb",
-      "image_url": "https://www.intrepidtravel.com/adventures/wp-content/uploads/2017/10/croatia_zagreb_night-city.jpg",
+      "image_urls": [
+        "https://www.intrepidtravel.com/adventures/wp-content/uploads/2017/10/croatia_zagreb_night-city.jpg"
+      ],
       "description": "Zagreb, Croatia’s northwestern capital, is distinguished by its 18th- and 19th-century Austro-Hungarian architecture. At its center, Upper Town is the site of the Gothic, twin-spired Zagreb Cathedral and 13th-century St. Mark’s Church, with a colorfully tiled roof. Nearby is pedestrian-friendly Tkalčićeva Street, lined with outdoor cafes. Lower Town has the main square, Ban Jelačić, plus shops, museums and parks.",
       "location": {
         "latitude": "45.8150",
@@ -37,7 +44,9 @@
     {
       "id": "6d322e54-ce63-4c46-96e8-28e1935585ca",
       "title": "Zadar",
-      "image_url": "https://cdn.budgetyourtrip.com/images/photos/articles/croatia_zadar.jpg",
+      "image_urls": [
+        "https://cdn.budgetyourtrip.com/images/photos/articles/croatia_zadar.jpg"
+      ],
       "description": "Zadar, a city on Croatia’s Dalmatian coast, is known for the Roman and Venetian ruins of its peninsular Old Town. There are several Venetian gates in the city walls. Surrounding the Roman-era Forum is 11th-century St. Mary’s Convent, with religious art dating to the 8th century. There’s also the grand, 12th-century St. Anastasia’s Cathedral and the round, 9th-century pre-Romanesque Church of St. Donatus.",
       "location": {
         "latitude": "44.1194",
@@ -53,7 +62,9 @@
     {
       "id": "0ec338ff-df52-4723-89ac-a987b2bc5267",
       "title": "Plitvice Lakes National Park",
-      "image_url": "https://i1.wp.com/www.gourmetroaming.com/wp-content/uploads/2017/10/plitvice-lakes-national-park.jpg",
+      "image_urls": [
+        "https://i1.wp.com/www.gourmetroaming.com/wp-content/uploads/2017/10/plitvice-lakes-national-park.jpg"
+      ],
       "description": "Plitviče Lakes National Park is a 295-sq.-km forest reserve in central Croatia. It's known for a chain of 16 terraced lakes, joined by waterfalls, that extend into a limestone canyon. Walkways and hiking trails wind around and across the water, and an electric boat links the 12 upper and 4 lower lakes. The latter are the site of Veliki Slap, a 78m-high waterfall.",
       "location": {
         "latitude": "44.8654",
@@ -70,7 +81,9 @@
     {
       "id": "b9dadbc9-89e4-4b16-9589-78297fb225a7",
       "title": "Kornati National Park",
-      "image_url": "https://www.sibenik-tourism.hr/upload/lokacije/2018/06/2018-06-27/14/nationalparkkornatiexcursionsprivatetoursromeoandjuliettravelagency.jpg",
+      "image_urls": [
+        "https://www.sibenik-tourism.hr/upload/lokacije/2018/06/2018-06-27/14/nationalparkkornatiexcursionsprivatetoursromeoandjuliettravelagency.jpg"
+      ],
       "description": "Kornat is an island in the Croatian part of the Adriatic Sea, in central Dalmatia. With an area of 32.44 km² it is the 16th largest island in Croatia and the largest island in the eponymous Kornati islands archipelago.",
       "location": {
         "latitude": "43.8707",
@@ -87,7 +100,9 @@
     {
       "id": "a879072e-4f36-489c-911b-3cc0a8c27406",
       "title": "Dubrovnik",
-      "image_url": "https://i.dailymail.co.uk/1s/2019/08/31/13/17909778-0-image-a-8_1567255695004.jpg",
+      "image_urls": [
+        "https://i.dailymail.co.uk/1s/2019/08/31/13/17909778-0-image-a-8_1567255695004.jpg"
+      ],
       "description": "Dubrovnik is a city in southern Croatia fronting the Adriatic Sea. It's known for its distinctive Old Town, encircled with massive stone walls completed in the 16th century. Its well-preserved buildings range from baroque St. Blaise Church to Renaissance Sponza Palace and Gothic Rector’s Palace, now a history museum. Paved with limestone, the pedestrianized Stradun (or Placa) is lined with shops and restaurants.",
       "location": {
         "latitude": "42.6507",
@@ -103,7 +118,9 @@
     {
       "id": "d416bff0-e92c-44c5-aae3-52109dd17fbc",
       "title": "Split",
-      "image_url": "https://cdn.tourcms.com/a/11676/730/1/default.jpg",
+      "image_urls": [
+        "https://cdn.tourcms.com/a/11676/730/1/default.jpg"
+      ],
       "description": "Split is Croatia's second-largest city and the largest city in the Dalmatia region. It lies on the eastern shore of the Adriatic Sea and is spread over a central peninsula and its surroundings.",
       "location": {
         "latitude": "43.5081",

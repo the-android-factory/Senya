@@ -64,7 +64,11 @@ class HomeFragmentController(
 
         override fun ViewHolderAttractionBinding.bind() {
             titleTextView.text = attraction.title
-            Picasso.get().load(attraction.image_url).into(headerImageView)
+            if (attraction.image_urls.isNotEmpty()) {
+                Picasso.get().load(attraction.image_urls[0]).into(headerImageView)
+            } else {
+                // better error handling
+            }
             monthsToVisitTextView.text = attraction.months_to_visit
 
             root.setOnClickListener {

@@ -64,6 +64,9 @@ dependencies {
     implementation "com.airbnb.android:epoxy:$epoxyVersion"
     kapt("com.airbnb.android:epoxy-processor:$epoxyVersion")
 
+    // Scrolling Page Indicator
+    implementation "ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:1.0.6"
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

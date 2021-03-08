@@ -1,13 +1,13 @@
-package com.dmp.senya.ui.fragment
+package com.dmp.senya.ui.fragment.details
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
 import com.dmp.senya.R
 import com.dmp.senya.databinding.FragmentActtractionDetailBinding
-import com.squareup.picasso.Picasso
+import com.dmp.senya.ui.fragment.BaseFragment
 
 class AttractionDetailFragment : BaseFragment() {
 
@@ -34,9 +34,15 @@ class AttractionDetailFragment : BaseFragment() {
         activityViewModel.selectedAttractionLiveData.observe(viewLifecycleOwner) { attraction ->
             binding.titleTextView.text = attraction.title
             binding.descriptionTextView.text = attraction.description
-            Picasso.get().load(attraction.image_url).into(binding.headerImageView)
-            binding.monthsToVisitTextView.text = attraction.months_to_visit
+            binding.headerEpoxyRecyclerView.setControllerAndBuildModels(
+                HeaderEpoxyController(
+                    attraction.image_urls
+                )
+            )
+            LinearSnapHelper().attachToRecyclerView(binding.headerEpoxyRecyclerView)
+            binding.indicator.attachToRecyclerView(binding.headerEpoxyRecyclerView)
 
+            binding.monthsToVisitTextView.text = attraction.months_to_visit
             binding.numberOfFactsTextView.text = "${attraction.facts.size} facts"
             binding.numberOfFactsTextView.setOnClickListener {
                 val stringBuilder = StringBuilder("")
