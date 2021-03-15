@@ -2,7 +2,7 @@ package com.dmp.senya.ui.fragment.details
 
 import android.os.Bundle
 import android.view.*
-import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import com.dmp.senya.R
@@ -33,7 +33,6 @@ class AttractionDetailFragment : BaseFragment() {
 
         activityViewModel.selectedAttractionLiveData.observe(viewLifecycleOwner) { attraction ->
             binding.titleTextView.text = attraction.title
-            binding.descriptionTextView.text = attraction.description
             binding.headerEpoxyRecyclerView.setControllerAndBuildModels(
                 HeaderEpoxyController(
                     attraction.image_urls
@@ -42,28 +41,42 @@ class AttractionDetailFragment : BaseFragment() {
             LinearSnapHelper().attachToRecyclerView(binding.headerEpoxyRecyclerView)
             binding.indicator.attachToRecyclerView(binding.headerEpoxyRecyclerView)
 
-            binding.monthsToVisitTextView.text = attraction.months_to_visit
-            binding.numberOfFactsTextView.text = "${attraction.facts.size} facts"
-            binding.numberOfFactsTextView.setOnClickListener {
-                val stringBuilder = StringBuilder("")
-                attraction.facts.forEach {
-                    stringBuilder.append("\u2022 $it")
-                    stringBuilder.append("\n\n")
+            var isGridMode: Boolean = binding.contentEpoxyRecyclerView.layoutManager is GridLayoutManager
+            val contentEpoxyController = ContentEpoxyController(attraction)
+            contentEpoxyController.isGridMode = isGridMode
+            contentEpoxyController.onChangeLayoutCallback = {
+                if (isGridMode) {
+                    binding.contentEpoxyRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+                } else {
+                    binding.contentEpoxyRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
                 }
-                val message = stringBuilder.toString()
-                    .substring(0, stringBuilder.toString().lastIndexOf("\n\n"))
 
-                AlertDialog.Builder(requireContext(), R.style.MyDialog)
-                    .setTitle("${attraction.title} Facts")
-                    .setMessage(message)
-                    .setPositiveButton("Ok") { dialog, which ->
-                        // run your code
-                    }
-                    .setNegativeButton("No!") { dialog, which ->
-                        // run negative code
-                    }
-                    .show()
+                isGridMode = !isGridMode
+                contentEpoxyController.isGridMode = isGridMode
+                contentEpoxyController.requestModelBuild()
             }
+
+            binding.contentEpoxyRecyclerView.setControllerAndBuildModels(contentEpoxyController)
+//            binding.numberOfFactsTextView.setOnClickListener {
+//                val stringBuilder = StringBuilder("")
+//                attraction.facts.forEach {
+//                    stringBuilder.append("\u2022 $it")
+//                    stringBuilder.append("\n\n")
+//                }
+//                val message = stringBuilder.toString()
+//                    .substring(0, stringBuilder.toString().lastIndexOf("\n\n"))
+//
+//                AlertDialog.Builder(requireContext(), R.style.MyDialog)
+//                    .setTitle("${attraction.title} Facts")
+//                    .setMessage(message)
+//                    .setPositiveButton("Ok") { dialog, which ->
+//                        // run your code
+//                    }
+//                    .setNegativeButton("No!") { dialog, which ->
+//                        // run negative code
+//                    }
+//                    .show()
+//            }
         }
     }
 
